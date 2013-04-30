@@ -5,6 +5,14 @@ body {
 	font-family: 'consolas'; font-size: 18px;
 }
 
+
+/* Form */
+
+form {
+	text-align: center;
+	padding-top: 40px;
+}
+
 /* Navigation & Menus */
 
 nav {
