@@ -4,13 +4,15 @@
 		<meta charset="utf-8" />
 		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="./css/main.css" media="all" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
 	</head>
 
 	<body>
 
 	<div id="canvas">
-		<div id="main_nav">
+
+		<span id="main_nav">
 			<nav>
 				<ul>
 					<li>GOOG
@@ -43,12 +45,22 @@
 					</li>
 				</ul>
 			</nav>
-		</div>
+		</span>
 
-		<form method="get" action="http://www.google.com/search">
-			<input type="text" name="q" size="31" maxlength="255" id="searchBox" />
-			<input type="submit" value="search" />
-		</form>
+		<span id="search">
+			<form method="get" action="http://www.google.com/search">
+				<input type="text" name="q" size="31" maxlength="255" id="searchBox" />
+				<input type="submit" value="search" />
+			</form>
+		</span>
+
+		<span class="rss">
+			<span id="rss_title">HN RSS - show</span>
+			<ul>
+			</ul>
+		</span>
+
+		<br>
 
 		This is muh homepage
 	</div>
