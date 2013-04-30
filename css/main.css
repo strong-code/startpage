@@ -1,0 +1,75 @@
+/* Main/General */
+
+body {
+	background: #AFD1E3;
+	font-family: 'consolas'; font-size: 18px;
+}
+
+/* Navigation & Menus */
+
+nav {
+	text-align: center;
+}
+
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+
+nav ul {
+	background: #efefef;
+	border: solid 1px;
+	box-shadow: 0px 0px 7.5px rgba(0,0,0,0.7);
+	padding-left: 10px;
+	padding-right: 10px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+	nav ul li {
+		float: left;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+		nav ul li:hover {
+			background: #687C87;
+		}
+			nav ul li:hover a {
+				color: #fff;
+			}
+
+		nav ul li a {
+			display: block; padding: 25px 40px;
+			color: #575f6a; text-decoration: none;
+		}
+
+
+	nav ul ul {
+		font-size: 14px;
+		background: #5f6975; border-radius: 0px; padding: 0;
+		position: absolute; top: 103%;
+	}
+		nav ul ul li {
+			float: none;
+			border-top: 1px solid #6b727c;
+			border-bottom: 1px solid #575f6a; position: relative;
+		}
+			nav ul ul li a {
+				padding: 15px 40px;
+				color: #fff;
+			}
+				nav ul ul li a:hover {
+					background: #687C87;
+				}
+
+	nav ul ul ul {
+		position: absolute; left: 100%; top:0;
+	}
