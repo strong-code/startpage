@@ -17,11 +17,13 @@ form {
 
 .rss {
 	text-align: center;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 .rss ul {
-	text-align: center;
+	background: rgba(235, 235, 235, .4);
+	width: 600px;
+	margin-left: 520px;
 	list-style: none;
 	display: none;
 }
@@ -34,6 +36,7 @@ form {
 
 #rss_title:hover {
 	cursor: pointer;
+	opacity: 1.0;
 }
 
 
@@ -62,7 +65,9 @@ nav ul {
 	display: inline-table;
 }
 	nav ul:after {
-		content: ""; clear: both; display: block;
+		content: "";
+		clear: both;
+		display: block;
 	}
 
 	nav ul li {
@@ -72,6 +77,7 @@ nav ul {
 	}
 		nav ul li:hover {
 			background: #687C87;
+			opacity: 0.9;
 		}
 			nav ul li:hover a {
 				color: #fff;
@@ -85,8 +91,11 @@ nav ul {
 
 	nav ul ul {
 		font-size: 14px;
-		background: #5f6975; border-radius: 0px; padding: 0;
-		position: absolute; top: 103%;
+		background: #5f6975;
+		border-radius: 0px;
+		padding: 0;
+		position: absolute;
+		top: 103%;
 	}
 		nav ul ul li {
 			float: none;
