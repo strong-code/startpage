@@ -4,10 +4,10 @@ window.onload = function(){
   text_input.select ();
 
   $('#rss_title').click(function() {
-  	if ($('#rss_title').html() == 'HN RSS - show') {
-  		$('#rss_title').html('HN RSS - hide');
+  	if ($('#rss_title').html() == 'HN RSS v show') {
+  		$('#rss_title').html('HN RSS ^ hide');
   	} else {
-  		$('#rss_title').html('HN RSS - show');
+  		$('#rss_title').html('HN RSS v show');
   	}
 	$('.rss ul').slideToggle('slow');
 });
