@@ -9,4 +9,4 @@ Currently looks like this:
 
 ![menu](/menu.jpg)
 
-![current_version](/current.jpg)
+![current_version](/current.gif)
