@@ -1,6 +1,7 @@
 /* Main/General */
 
 body {
+	text-align: center;
 	background: #797D80;
 	background-image: url('bg_pattern.png');
 	font-family: 'consolas'; font-size: 18px;
@@ -18,14 +19,12 @@ a:hover {
 /* Form */
 
 form {
-	text-align: center;
 	padding-top: 40px;
 }
 
 /* Search */
 
 #search form {
-	margin-left: 70px;
 	padding-bottom: 15px;
 }
 
@@ -33,7 +32,6 @@ form {
 	border: none;
 	border-bottom: 1px solid;
 	background: none;
-	text-align: center;
 }
 	#search input[type=text]:focus {
 		outline: none;
@@ -58,22 +56,22 @@ form {
 /* RSS */
 
 .rss {
-	text-align: center;
 	font-size: 13px;
 }
 
 .rss ul {
+	position: absolute;
+	float: left;
+	left: 30%;
 	background: rgba(101, 111, 125, .4);
-	width: 600px;
-	margin-left: 520px;
 	list-style: none;
+	width: 600px;
 	display: none;
 	border: 1px solid;
 }
 
 #rss_title {
 	background-color: #656F7D;
-	margin-left: 775px;
 	border: solid 1px;
 	padding-left: 4px; padding-right: 4px;
 }
@@ -86,10 +84,6 @@ form {
 
 
 /* Navigation & Menus */
-
-nav {
-	text-align: center;
-}
 
 nav ul ul {
 	display: none;
