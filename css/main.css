@@ -61,11 +61,9 @@ form {
 
 .rss ul {
 	position: absolute;
-	float: left;
 	left: 30%;
 	background: rgba(101, 111, 125, .4);
 	list-style: none;
-	width: 600px;
 	display: none;
 	border: 1px solid;
 }
