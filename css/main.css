@@ -1,13 +1,45 @@
 /* Main/General */
 
-body {
+html, body {
 	text-align: center;
 	background: #797D80;
-	background-image: url('bg_pattern.png');
-	font-family: 'consolas'; font-size: 18px;
+	background-image: url('bg_pattern4.png');
+	font-weight: lighter;
+	font-weight: normal;
 }
 
-a {
+.link-tile  {
+	margin-bottom: 3%;
+	margin-left: 1%;
+	font-family: 'Open Sans', sans-serif;
+	opacity: 0.65;
+	/*z-index: 999999;*/
+}
+
+.link-tile:hover {
+	opacity: 1;
+}
+
+
+#row-1 {
+	margin-top: 10%;
+}
+
+#submenu {
+	border: 1px solid;
+	position: absolute;
+	margin-left: 68%;
+	background-color: gray;
+	height: 550px;
+	width: 400px;
+	display: none;
+}
+
+#row {
+	margin-top: 10%;
+}
+
+/*a {
 	color: #000;
 }
 
@@ -18,13 +50,13 @@ a:hover {
 
 /* Form */
 
-form {
+/*form {
 	padding-top: 40px;
-}
+}*/
 
 /* Search */
 
-#search form {
+/*#search form {
 	padding-bottom: 15px;
 }
 
@@ -55,7 +87,7 @@ form {
 
 /* RSS */
 
-.rss {
+/*.rss {
 	font-size: 13px;
 }
 
@@ -83,7 +115,7 @@ form {
 
 /* Navigation & Menus */
 
-nav ul ul {
+/*nav ul ul {
 	display: none;
 }
 
@@ -151,3 +183,4 @@ nav ul {
 	nav ul ul ul {
 		position: absolute; left: 100%; top:0;
 	}
+*/

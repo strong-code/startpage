@@ -5,6 +5,7 @@ Just a custom homepage.
 
 Currently looks like this:
 
-![menu](/menu.jpg)
+##version 1.0
+![menu](/screenshots/menu.jpg)
 
-![current_version](/current.gif)
+![current_version](/screenshots/current.gif)
