@@ -5,88 +5,86 @@
 		<meta charset="utf-8" />
 		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="./css/main.css" media="all" />
-		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="./js/main.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 	</head>
 
 	<body>
-
-	<div id="canvas">
-
-		<span id="main_nav">
-			<nav>
-				<ul>
-					<li>GOOGLE
-						<ul>
-							<li><a href="https://mail.google.com/mail">email</a></li>
-							<li><a href="https://music.google.com/">music</a></li>
-							<li><a href="https://drive.google.com/?tab=mo%26authuser=0#my-drive">drive</a></li>
-						</ul>
-					</li>
-					<li>SOCIAL
-						<ul>
-							<li><a href="https://facebook.com/">facebook</a></li>
-							<li><a href="https://twitter.com/">twitter</a></li>
-							<li><a href="https://www.youtube.com/feed/subscriptions">youtube</a></li>
-							<li><a href="https://www.quora.com/">quora</a></li>
-							<li><a href="https://last.fm/user/clindsay107">last.fm</a></li>
-						</ul>
-					</li>
-					<li>4CHAN
-						<ul>
-							<li><a href="https://boards.4chan.org/g/">/g/</a></li>
-							<li><a href="https://boards.4chan.org/v/">/v/</a></li>
-							<li><a href="https://boards.4chan.org/fit/">/fit/</a></li>
-							<li><a href="https://boards.4chan.org/fa/">/fa/</a></li>
-						</ul>
-					</li>
-					<li>REDDIT
-						<ul>
-							<li><a href="https://pay.reddit.com/">front</a></li>
-							<li><a href="https://pay.reddit.com/r/surfing">surfing</a></li>
-							<li><a href="https://pay.reddit.com/r/technology/">tech</a>
-								<ul>
-									<li><a href="https://pay.reddit.com/r/arduino/">arduino</a></li>
-									<li><a href="https://pay.reddit.com/r/NetSec">netsec</a></li>
-									<li><a href="https://pay.reddit.com/r/ReverseEngineering">reverse eng</a></li>
-									<li><a href="https://pay.reddit.com/r/Python/">python</a></li>
-								</ul>
-							</li>
-							<li><a href="https://pay.reddit.com/r/gaming/">gaming</a>
-								<ul>
-									<li><a href="https://pay.reddit.com/r/leagueoflegends/">LoL</a></li>
-								</ul
-							</li>
-						</ul>
-					</li>
-					<li>MARKETING
-						<ul>
-							<li><a href="https://tumblr.com/dashboard">Tumblr</a></li>
-							<li><a href="https://www.google.com/analytics/web/#report/visitors-overview/a28159782w53806323p54686249/">Analytics</a></li>
-							<li><a href="https://www.shopstyle.com/page/ShopSenseDashboard">shopsense</a></li>
-							<li><a href="https://www.google.com/adsense/app#viewreports">Adsense</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
+	<div class="row" id="row-1">
+		<span class="col-xs-2 col-xs-offset-1 link-tile">
+			<a href="https://mail.google.com">
+				<img src="http://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" height="100" width="100">
+			</a>
 		</span>
-
-		<span id="search">
-			<form method="get" action="https://www.google.com/search">
-				<input type="text" name="q" size="31" maxlength="255" id="searchBox" />
-				<input type="submit" value="search" id="submit" />
-			</form>
+		<span class="col-xs-2 link-tile">
+			<a href="https://www.facebook.com/">
+				<img src="http://www.inputtomain.com/site_images/facebook_icon.png" height="100" width="100">
+			</a>
 		</span>
-
-		<article class="rss">
-			<span id="rss_title">HN RSS v show</span>
-			<ul>
-			</ul>
-		</article>
-
-		<br>
-
+		<span class="col-xs-2 link-tile">
+			<a href="http://www.last.fm/user/clindsay107">
+				<img src="http://www.miriamcerna.eu/myp5/project/kika/lastfm.png" height="100" width="100">
+			</a>
+		</span>
 	</div>
+
+	<div class="row" id="row-2">
+		<span class="col-xs-2 col-xs-offset-1 link-tile">
+			<a href="https://play.google.com/music/listen">
+				<img src="https://cdn1.iconfinder.com/data/icons/Android-R2-png/512/Music-Android-R.png" height="100" width="100">
+			</a>
+		</span>
+		<span class="col-xs-2 link-tile">
+			<a href="https://twitter.com/">
+				<img src="https://g.twimg.com/Twitter_logo_blue.png" height="100" widht="100">
+			</a>
+		</span>
+		<span class="col-xs-2 link-tile">
+			<a href="#">
+				<img src="http://blog.genie9.com/wp-content/uploads/2013/09/Twitch.png" height="100" width="100">
+			</a>
+		</span>
+	</div>
+
+	<div class="row" id="row-3">
+		<span class="col-xs-2 col-xs-offset-1 link-tile">
+			<a href="https://drive.google.com/#my-drive">
+				<img src="http://blog.cloudlock.com/wp-content/uploads/2014/03/Google-Drive-Logo.png" height="100" width="100">
+			</a>
+		</span>
+		<span class="col-xs-2 link-tile">
+			<a href="https://www.youtube.com/feed/subscriptions">
+				<img src="http://www.underconsideration.com/brandnew/archives/youtube_logo_detail.png" height="100" widht="100">
+			</a>
+		</span>
+		<span class="col-xs-2 link-tile">
+			<a href="#">
+				<img src="https://1-media-cdn.foolz.us/ffuuka/board/q/image/1364/02/1364027354010.png" height="100" width="100">
+			</a>
+		</span>
+	</div>
+
+	<div class="row" id="row-4">
+		<span class="col-xs-2 col-xs-offset-1 link-tile">
+			<a href="https://github.com/clindsay107">
+				<img src="https://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png" height="100" width="100">
+			</a>
+		</span>
+		<span class="col-xs-2 link-tile">
+			<a href="http://instagram.com/">
+				<img src="http://www.tmonline.se/student/wp-content/uploads/sites/4/2012/12/instagram_256.png" height="100" widht="100">
+			</a>
+		</span>
+		<span class="col-xs-2 link-tile">
+			<a href="#">
+				<img src="http://www.independentmusicpromotions.com/wp-content/uploads/2012/11/hypemachine.jpg" height="100" width="100">
+			</a>
+		</span>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
 
 	</body>
 </html>
