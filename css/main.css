@@ -56,6 +56,7 @@ html, body {
 }
 
 #rss-title {
+	opacity: 0.8;
 	margin-right: 139px;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #656F7D;
