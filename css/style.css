@@ -282,6 +282,7 @@ textarea {
 .menu-link-item:hover a label {
   color: #ffffff;
   border-color: #ffffff;
+  cursor: pointer;
 }
 
 /*==============*/
