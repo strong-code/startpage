@@ -78,7 +78,7 @@ var linkMenu = [
   ["HackerNews",               "https://news.ycombinator.com",""],
   ["GitHub",                   "https://github.com",""],
   ["Gist",                     "https://gist.github.com/",""],
-  ["Imgur",                    "https://imgur.com/",""],
+  ["Imgur",                    "https://imgur.com/upload",""],
 
   [svgGamepad,                 "magenta",                                     "-HEAD-"], // Gaming
   ["Twitch",                   "https://twitch.tv/directory",""],
