@@ -134,7 +134,7 @@ function buildDate() {
                       monthNames[today.getMonth()] +
                       " " +
                       today.getDate() +
-                      "</font><br><font>" +
+                      "</font><br><font class=\"font-1em\">" +
                       dayNames[today.getDay()] +
                       ", " +
                       today.getFullYear() +
