@@ -90,7 +90,7 @@ var linkMenu = [
   ["CoinMarketCap",            "https://coinmarketcap.com",""],
   ["eBay",                     "https://ebay.com",""],
   ["Pivotal Tracker",          "https://www.pivotaltracker.com/n/projects/2187004",""],
-  ["SlickDeals",               "https://www.slickdeals.com",""],
+  ["SlickDeals",               "https://slickdeals.net/",""],
 ];
 // DID I FORGET TO MENTION?! THE DEMO LINKS DO NOTHING!
 
