@@ -31,7 +31,7 @@ textarea {
 }
 
 .background {
-  background: #0d1011 url("../media/city.jpg") no-repeat center fixed;
+  background: #0d1011 url("../media/farm.jpg") no-repeat center fixed;
   background-size: cover;
   position: fixed;
   left: 0;
@@ -183,7 +183,7 @@ textarea {
 .input-active #searchContainer {
   box-shadow: 0  0    8px  0   rgba(0,0,0,.18),
               0  8px 16px  0   rgba(0,0,0,.36);
-  transition: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;           
+  transition: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
 }
 .menu-category {
   display: flex;
