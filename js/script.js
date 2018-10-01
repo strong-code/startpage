@@ -65,6 +65,7 @@ var linkMenu = [
   ["/r/battlestations",        "https://reddit.com/r/battlestations",""],
   ["/r/hardwareswap",          "https://reddit.com/r/hardwareswap",""],
   ["/r/forhire",               "https://reddit.com/r/forhire",""],
+  ["LiveStreamFails",          "https://reddit.com/r/LivestreamFail/",""],
 
   [svgClover,                  "cyan",                                        "-HEAD-"], // 4chan
   ["/biz/ Business & Finance", "https://boards.4chan.org/biz/",""],
