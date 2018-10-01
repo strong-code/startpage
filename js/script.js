@@ -58,7 +58,7 @@ var linkMenu = [
   ["G.O.D.",        "https://goodolddownloads.com/enter",""],
 
   [svgReddit,                  "green",                                       "-HEAD-"], // Reddit
-  ["/r/buildapcsales",         "https://reddit.com/r/buildapcsales",""],
+  ["/r/buildapcsales",         "https://reddit.com/r/buildapcsales/new",""],
   ["/r/entreprenuer",          "https://reddit.com/r/Entrepreneur/",""],
   ["/r/juststart",             "https://reddit.com/r/juststart",""],
   ["/r/frugalmalefashion",     "https://reddit.com/r/frugalmalefashion",""],
