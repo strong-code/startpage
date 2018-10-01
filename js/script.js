@@ -65,7 +65,6 @@ var linkMenu = [
   ["/r/battlestations",        "https://reddit.com/r/battlestations",""],
   ["/r/hardwareswap",          "https://reddit.com/r/hardwareswap",""],
   ["/r/forhire",               "https://reddit.com/r/forhire",""],
-  ["LiveStreamFails",          "https://reddit.com/r/LivestreamFail/",""],
 
   [svgClover,                  "cyan",                                        "-HEAD-"], // 4chan
   ["/biz/ Business & Finance", "https://boards.4chan.org/biz/",""],
@@ -80,16 +79,22 @@ var linkMenu = [
   ["GitHub",                   "https://github.com",""],
   ["Gist",                     "https://gist.github.com/",""],
   ["Imgur",                    "https://imgur.com/upload",""],
+  ["10 Minute Mail",           "https://10minutemail.net/",""],
+  ["Whats My DNS",             "https://www.whatsmydns.net/",""],
+  ["VirusTotal",               "https://www.virustotal.com/#/home/upload",""],
 
   [svgGamepad,                 "magenta",                                     "-HEAD-"], // Gaming
   ["Twitch",                   "https://twitch.tv/directory",""],
   ["Steam",                    "https://store.steampowered.com/",""],
   ["Humble Bundle",            "https://www.humblebundle.com/",""],
+  ["LiveStreamFails",          "https://reddit.com/r/LivestreamFail/",""],
 
   [svgMore,                    "yellow",                                      "-HEAD-"], // Other
+  ["YouTube",                  "https://www.youtube.com/",""],
   ["500px",                    "https://500px.com",""],
   ["CoinMarketCap",            "https://coinmarketcap.com",""],
-  ["eBay",                     "https://ebay.com",""],
+  ["eBay",                     "https://www.ebay.com/myb/Summary",""],
+  ["PayPal",                   "https://www.paypal.com/",""],
   ["Pivotal Tracker",          "https://www.pivotaltracker.com/n/projects/2187004",""],
   ["SlickDeals",               "https://slickdeals.net/",""],
   ["Misc",                     "https://forum.bodybuilding.com/forumdisplay.php?f=19",""],
