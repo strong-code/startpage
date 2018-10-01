@@ -59,6 +59,7 @@ var linkMenu = [
 
   [svgReddit,                  "green",                                       "-HEAD-"], // Reddit
   ["/r/buildapcsales",         "https://reddit.com/r/buildapcsales/new",""],
+  ["/r/analog",                "https://reddit.com/r/analog",""],
   ["/r/entreprenuer",          "https://reddit.com/r/Entrepreneur/",""],
   ["/r/juststart",             "https://reddit.com/r/juststart",""],
   ["/r/frugalmalefashion",     "https://reddit.com/r/frugalmalefashion",""],
