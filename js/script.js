@@ -15,6 +15,7 @@ var dayNames = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THRUSDAY", "FRIDAY"
 
 var CookiePrefix = "strongcode_stpg_"; //prefix for cookies.
 var cmdPrefix = "!"; //prefix for commands.
+var stockPrefix = "$"; //prefix for stock search.
 var ssi = 6; //set default search provider. Use array index of the array below. (Starting with 0)
 // Format: [Keyword, Search URL (Search query replaces "{Q}"), "Input placeholder text"]
 var searchSources = [
@@ -24,7 +25,7 @@ var searchSources = [
   ["ud",       "http://www.urbandictionary.com/define.php?term={Q}",     "Urban Dictionary"],
   ["wp",       "http://en.wikipedia.org/w/index.php?search={Q}",         "Wikipedia"],
   ["yt",       "https://www.youtube.com/results?search_query={Q}",       "YouTube"],
-  ["ddg",      "https://duckduckgo.com/?q={Q}",                         "DuckDuckGo"]
+  ["ddg",      "https://duckduckgo.com/?q={Q}",                          "DuckDuckGo"]
 ];
 
 // Because I care about readability in my JS. kthx.
@@ -199,26 +200,37 @@ function handleQuery(event, query) {
         }
       }
     } else if (key === 13) {
-      qList = query.split(" ");
-      if (qList[0].charAt(0) === cmdPrefix) {
-        var keyword = "";
-        for (var i = 0; i < searchSources.length; i++) {
-          keyword = cmdPrefix + searchSources[i][0];
-          if (keyword === qList[0]) {
-            ssi = i;
-            break;
-          }
-        }
-        if (qList.length > 1) {
-          window.location = searchSources[ssi][1].replace("{Q}", encodeURIComponent(query.replace(keyword, ""))).trim();
-        } else {
-          searchInput.placeholder = searchSources[ssi][2];
-          searchInput.value = "";
-        }
+      var ticker = "";
+      if (query.charAt(0) === "$") { // Check if this is a stock query
+        ticker = query.split("$");
+        window.location = "https://finance.yahoo.com/quote/" + ticker[1];
       } else {
-        window.location = searchSources[ssi][1].replace("{Q}", encodeURIComponent(query));
+        qList = query.split(" ");
+        if (qList[0].charAt(0) === cmdPrefix) {
+          var keyword = "";
+          for (var i = 0; i < searchSources.length; i++) {
+            keyword = cmdPrefix + searchSources[i][0];
+            if (keyword === qList[0]) {
+              ssi = i;
+              break;
+            }
+          }
+          if (qList.length > 1) {
+            window.location = searchSources[ssi][1].replace("{Q}", encodeURIComponent(query.replace(keyword, ""))).trim();
+          } else {
+            searchInput.placeholder = searchSources[ssi][2];
+            searchInput.value = "";
+          }
+        } else {
+          window.location = searchSources[ssi][1].replace("{Q}", encodeURIComponent(query));
+        }
       }
     }
+  } else if (event.key === "$" ) {
+    // switch to Yahoo Finance if first '$' is entered
+    searchInput.placeholder = "Yahoo Finance";
+    searchInput.value = "$";
+    event.preventDefault();
   }
   if (key === 27) {
     searchInput.blur();
