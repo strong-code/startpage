@@ -37,6 +37,7 @@ var svgSocial  = "<svg style=\"width:24px;height:24px\" xmlns=\"http://www.w3.or
 var svgReddit  = "<svg style=\"width:24px;height:24px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.329-1.015c-.189-.046-.381.063-.44.249l-1.654 5.207c-2.838.034-5.409.798-7.3 2.025-.474-.438-1.103-.712-1.799-.712-1.465 0-2.656 1.187-2.656 2.646 0 .97.533 1.811 1.317 2.271-.052.282-.086.567-.086.857 0 3.911 4.808 7.093 10.719 7.093s10.72-3.182 10.72-7.093c0-.274-.029-.544-.075-.81.832-.447 1.405-1.312 1.405-2.318zm-17.224 1.816c0-.868.71-1.575 1.582-1.575.872 0 1.581.707 1.581 1.575s-.709 1.574-1.581 1.574-1.582-.706-1.582-1.574zm9.061 4.669c-.797.793-2.048 1.179-3.824 1.179l-.013-.003-.013.003c-1.777 0-3.028-.386-3.824-1.179-.145-.144-.145-.379 0-.523.145-.145.381-.145.526 0 .65.647 1.729.961 3.298.961l.013.003.013-.003c1.569 0 2.648-.315 3.298-.962.145-.145.381-.144.526 0 .145.145.145.379 0 .524zm-.189-3.095c-.872 0-1.581-.706-1.581-1.574 0-.868.709-1.575 1.581-1.575s1.581.707 1.581 1.575-.709 1.574-1.581 1.574z\" /></svg>";
 var svgDl      = "<svg style=\"width:24px;height:24px\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 24 24\"><path d=\"M23.984 11h-2.006c-.057-.557-.143-1.104-.287-1.631l1.82-.862c.245.799.401 1.632.473 2.493zm-3.035-3.493l1.81-.857c-.353-.7-.758-1.368-1.236-1.981l-1.512 1.318c.36.474.667.986.938 1.52zm.039 8.939c-.26.519-.562 1.01-.904 1.473l1.539 1.29c.465-.616.871-1.276 1.211-1.976l-1.846-.787zm-.836-13.238c-.589-.54-1.214-1.038-1.9-1.454l-1.216 1.599c.577.334 1.104.739 1.602 1.177l1.514-1.322zm-1.414 16.195c-1.779 1.608-4.129 2.597-6.713 2.597-5.525 0-10.021-4.486-10.021-10 0-3.692 2.021-6.915 5.011-8.647l-1.215-1.599c-3.473 2.103-5.8 5.897-5.8 10.246 0 6.627 5.385 12 12.025 12 3.204 0 6.107-1.259 8.264-3.297l-1.551-1.3zm3.258-6.403c-.054.54-.162 1.063-.299 1.574l1.864.795c.224-.762.372-1.553.439-2.369h-2.004zm-9.996 5l7-8h-4v-10h-6v10h-4l7 8z\" /></svg>";
 var svgTrash   = "<svg style=\"width:24px;height:24px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z\" /></svg>";
+var svgMoney   = "<svg style=\"width:24px;height:30px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"3 5 20 20\"><path d=\"M12.478,17.795c-1.307,0-2.507-0.456-3.343-0.955l-0.578,2.041c0.771,0.521,2.168,0.912,3.518,0.955v1.913h1.71v-2.044 c2.357-0.391,3.621-2.019,3.621-3.865c0-1.932-1.072-3.105-3.471-4.017c-1.821-0.738-2.593-1.238-2.593-2.128 c0-0.738,0.536-1.52,2.036-1.52c1.457,0,2.399,0.5,2.914,0.738l0.579-1.997c-0.686-0.348-1.607-0.673-2.957-0.717V4.25h-1.757v2.059 c-2.164,0.391-3.45,1.824-3.45,3.692c0,2.019,1.457,3.061,3.707,3.886c1.586,0.586,2.336,1.216,2.336,2.193 C14.749,17.123,13.827,17.795,12.478,17.795z\" /></svg>";
 
 /* Header Format: ["(Label)", "(Accent Color)", "-HEAD-"],
 *   - The labels are setup for 24px SVGs. by default they are separated from the linkMenu for readability.
@@ -96,10 +97,21 @@ var linkMenu = [
   ["500px",                    "https://500px.com",""],
   ["CoinMarketCap",            "https://coinmarketcap.com",""],
   ["eBay",                     "https://www.ebay.com/myb/Summary",""],
-  ["PayPal",                   "https://www.paypal.com/",""],
   ["Pivotal Tracker",          "https://www.pivotaltracker.com/n/projects/2187004",""],
   ["SlickDeals",               "https://slickdeals.net/",""],
   ["Misc",                     "https://forum.bodybuilding.com/forumdisplay.php?f=19",""],
+
+  [svgMoney,                   "white",                                      "-HEAD-"], // Other
+  ["Google Analytics",         "https://analytics.google.com/analytics/web/#/",""],
+  ["Amazon Affiliates",        "https://affiliate-program.amazon.com/home",""],
+  ["Adsense",                  "https://www.google.com/adsense/new/u/0/pub-3243030667692436/home",""],
+  ["NordVPN",                  "https://affiliates.nordvpn.com/login",""],
+  ["TheStreamSetup (Admin)",   "https://thestreamsetup.com/wp-admin/",""],
+  ["TheStreamSetup (Email)",   "https://webmailer.1and1.com/?Username=editor@thestreamsetup.com",""],
+  ["Facebook Advertising",     "https://www.facebook.com/adsmanager/manage/campaigns?act=680565441959914&columns=name%2Cerrors%2Cdelivery%2Cresults%2Creach%2Cimpressions%2Ccost_per_result%2Cbudget%2Cspend%2Cend_time%2Cschedule%2Crelevance_score%3Ascore%2Cfrequency%2Cunique_actions%3Alink_click&attribution_windows=default",""],
+  ["PayPal",                   "https://www.paypal.com/",""],
+  ["VigLink",                  "https://publishers.viglink.com/publisher/dashboard",""],
+  ["Betterment",               "https://wwws.betterment.com/app/summary",""],
 ];
 // DID I FORGET TO MENTION?! THE DEMO LINKS DO NOTHING!
 
