@@ -102,6 +102,7 @@ var linkMenu = [
   ["Misc",                     "https://forum.bodybuilding.com/forumdisplay.php?f=19",""],
 
   [svgMoney,                   "white",                                      "-HEAD-"], // Other
+  ["Ahrefs",                   "https://ahrefs.com/dashboard/metrics",""],
   ["Google Analytics",         "https://analytics.google.com/analytics/web/#/",""],
   ["Amazon Affiliates",        "https://affiliate-program.amazon.com/home",""],
   ["Adsense",                  "https://www.google.com/adsense/new/u/0/pub-3243030667692436/home",""],
