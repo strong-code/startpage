@@ -28,6 +28,23 @@ var searchSources = [
   ["ddg",      "https://duckduckgo.com/?q={Q}",                          "DuckDuckGo"]
 ];
 
+// Sources for background images that dynamically load. Date color is to make it
+// readable on different colored backgrounds
+// Format: [filename, date color]
+var bgSources = [
+  ["aurora.gif", "white"],
+  ["bridge.gif", "white"],
+  ["cabin.jpg", "black"],
+  ["cat.gif", "black"],
+  ["cyberpunk.gif", "white"],
+  ["farm.jpg", "black"],
+  ["miami.gif", "white"],
+  ["sheep.gif", "black"],
+  ["smoking.gif", "white"],
+  ["snowhouse.gif", "white"],
+  ["train.gif", "white"],
+]
+
 // Because I care about readability in my JS. kthx.
 var svgClover  = "<svg style=\"width:24px;height:24px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"m19.9 8.78c1.05-0.611 2.01-1.51 2.42-2.68 0.503-1.41 0.089-3.08-0.98-4.11-0.425-0.381-0.987-0.729-1.58-0.6-0.433 0.083-0.737 0.43-0.942 0.797-0.349-0.648-0.699-1.32-1.29-1.79-0.755-0.616-2-0.446-2.57 0.336-0.911 1.13-1.16 2.65-1.17 4.06 0.039 1.93 0.514 3.88 1.4 5.59 1.7-0.4 3.4-0.76 4.8-1.62z\"/><path d=\"m10.8 8.75c-0.275-1.71-0.664-3.44-1.54-4.94-0.536-0.929-1.29-1.77-2.28-2.23-1.25-0.62-2.86-0.42-3.98 0.43-0.55 0.41-1.04 1.01-1.05 1.72 0.009 0.507 0.366 0.908 0.787 1.14-0.842 0.422-1.77 0.9-2.17 1.8-0.302 0.64-0.05 1.39 0.42 1.86 0.75 0.77 1.81 1.13 2.84 1.32 2.37 0.35 4.81-0.14 6.97-1.1z\"/><path d=\"m9.12 13.5c-1.58 0.447-3.14 1.09-4.46 2.08-0.913 0.694-1.72 1.6-2.04 2.73-0.442 1.45 0.102 3.12 1.26 4.08 0.495 0.399 1.17 0.737 1.81 0.504 0.418-0.127 0.61-0.552 0.833-0.888 0.463 0.773 1.07 1.55 1.95 1.86 0.635 0.238 1.36-0.032 1.78-0.541 0.658-0.787 0.89-1.83 0.968-2.83 0.128-2.48-0.738-4.9-2.02-6.99l-0.06-0.1z\"/><path d=\"m22.8 15.2c-0.885-0.733-2.02-1.1-3.14-1.27-2.14-0.318-4.3 0.091-6.32 0.784 0.158 1.72 0.477 3.46 1.25 5.01 0.549 1.09 1.39 2.1 2.55 2.56 1.45 0.584 3.25 0.204 4.29-0.973 0.329-0.374 0.572-0.896 0.443-1.4-0.092-0.388-0.413-0.646-0.695-0.897 0.922-0.318 1.91-0.825 2.31-1.77 0.3-0.7-0.2-1.5-0.7-2z\"/></svg>";
 var svgCode    = "<svg style=\"width:24px;height:24px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z\" /></svg>";
@@ -127,13 +144,25 @@ var dateDiv = $('dateContainer');
 var notesTextarea = $('notesInput');
 
 function init() {
+  initBackground();
   initSearchBar();
-  buildDate();
   buildMenu();
   $('body').style.opacity = 1;
   $('mainContainer').style.opacity = 1;
   $('dateContainer').style.opacity = 1;
   $('notesWidget').style.opacity = 1;
+}
+
+function initBackground() {
+  // Get the bgSource element
+  var topBound = bgSources.length;
+  var background = bgSources[Math.floor(Math.random() * (11 - 0))];
+
+  // Change background image
+  var bgFilepath = "url(./media/" + background[0] + ")";
+  document.getElementById("background_").style.backgroundImage = bgFilepath;
+
+  buildDate(background[1]);
 }
 
 function initSearchBar() {
@@ -151,13 +180,13 @@ function initSearchBar() {
   searchInput.value = "";
 }
 
-function buildDate() {
+function buildDate(color) {
   var today = new Date();
-  dateDiv.innerHTML = "<font class=\"font-3em\">" +
+  dateDiv.innerHTML = "<font class=\"font-3em\" color=\"" + color + "\">" +
                       monthNames[today.getMonth()] +
                       " " +
                       today.getDate() +
-                      "</font><br><font class=\"font-1em\">" +
+                      "</font><br><font class=\"font-1em\" color=\"" + color + "\">" +
                       dayNames[today.getDay()] +
                       ", " +
                       today.getFullYear() +
