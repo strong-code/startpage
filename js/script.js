@@ -83,7 +83,7 @@ var linkMenu = [
   ["/r/juststart",             "https://reddit.com/r/juststart",""],
   ["/r/frugalmalefashion",     "https://reddit.com/r/frugalmalefashion",""],
   ["/r/battlestations",        "https://reddit.com/r/battlestations",""],
-  ["/r/hardwareswap",          "https://reddit.com/r/hardwareswap",""],
+  ["/r/hardwareswap",          "https://old.reddit.com/r/hardwareswap/new/",""],
   ["/r/forhire",               "https://reddit.com/r/forhire",""],
 
   [svgClover,                  "cyan",                                        "-HEAD-"], // 4chan
