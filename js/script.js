@@ -112,6 +112,7 @@ var linkMenu = [
   [svgMore,                    "yellow",                                      "-HEAD-"], // Other
   ["YouTube",                  "https://www.youtube.com/",""],
   ["500px",                    "https://500px.com",""],
+  ["GoodReads",                "https://goodreads.com",""],
   ["CoinMarketCap",            "https://coinmarketcap.com",""],
   ["eBay",                     "https://www.ebay.com/myb/Summary",""],
   ["Pivotal Tracker",          "https://www.pivotaltracker.com/n/projects/2187004",""],
