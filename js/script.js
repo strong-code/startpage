@@ -127,6 +127,7 @@ var linkMenu = [
   ["Adsense",                  "https://www.google.com/adsense/new/u/0/pub-3243030667692436/home",""],
   ["NordVPN",                  "https://affiliates.nordvpn.com/login",""],
   ["TheOuternationalist (Admin)", "https://theouternationalist.com/wp-admin/",""],
+  ["TheOuternationalist (Pinterst)", "https://www.pinterest.com/theouternationalist/",""],
   ["TheStreamSetup (Admin)",   "https://thestreamsetup.com/wp-admin/",""],
   ["TheStreamSetup (Email)",   "https://webmailer.1and1.com/?Username=editor@thestreamsetup.com",""],
   ["Facebook Advertising",     "https://www.facebook.com/adsmanager/manage/campaigns?act=680565441959914&columns=name%2Cerrors%2Cdelivery%2Cresults%2Creach%2Cimpressions%2Ccost_per_result%2Cbudget%2Cspend%2Cend_time%2Cschedule%2Crelevance_score%3Ascore%2Cfrequency%2Cunique_actions%3Alink_click&attribution_windows=default",""],
