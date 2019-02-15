@@ -25,7 +25,8 @@ var searchSources = [
   ["ud",       "http://www.urbandictionary.com/define.php?term={Q}",     "Urban Dictionary"],
   ["wp",       "http://en.wikipedia.org/w/index.php?search={Q}",         "Wikipedia"],
   ["yt",       "https://www.youtube.com/results?search_query={Q}",       "YouTube"],
-  ["ddg",      "https://duckduckgo.com/?q={Q}",                          "DuckDuckGo"]
+  ["ddg",      "https://duckduckgo.com/?q={Q}",                          "DuckDuckGo"],
+  ["gr",       "https://goodreads.com/search?q={Q}",                     "GoodReads"]
 ];
 
 // Sources for background images that dynamically load. Date color is to make it
