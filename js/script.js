@@ -97,6 +97,7 @@ var linkMenu = [
 
   [svgCode,                    "red",                                         "-HEAD-"], // Coding
   ["HackerNews",               "https://news.ycombinator.com",""],
+  ["Lobste.rs",                "https://lobste.rs/",""],
   ["DigitalOcean",             "https://cloud.digitalocean.com/projects",""],
   ["GitHub",                   "https://github.com",""],
   ["Gist",                     "https://gist.github.com/",""],
