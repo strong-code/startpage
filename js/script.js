@@ -130,6 +130,7 @@ var linkMenu = [
   ["Adsense",                  "https://www.google.com/adsense/new/u/0/pub-3243030667692436/home",""],
   ["NordVPN",                  "https://affiliates.nordvpn.com/login",""],
   ["Ezoic",                    "https://svc.ezoic.com/svc/pub/stats/dashboard.php",""],
+  ["Fiverr",                   "https://fiverraffiliates.com/affiliatev2",""],
   ["TheStreamSetup (Admin)",   "https://thestreamsetup.com/wp-admin/",""],
   ["TheStreamSetup (Email)",   "https://webmailer.1and1.com/?Username=editor@thestreamsetup.com",""],
   ["Good Movement (WP Admin)", "https://goodmvmt.com/wp-login.php",""],
