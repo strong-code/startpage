@@ -108,6 +108,7 @@ var linkMenu = [
 
   [svgGamepad,                 "magenta",                                     "-HEAD-"], // Gaming
   ["Twitch",                   "https://twitch.tv/directory",""],
+  ["CrackWatch",               "https://crackwatch.com/",""],
   ["Steam",                    "https://store.steampowered.com/",""],
   ["Humble Bundle",            "https://www.humblebundle.com/",""],
   ["LiveStreamFails",          "https://reddit.com/r/LivestreamFail/",""],
