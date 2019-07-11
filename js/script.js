@@ -70,7 +70,7 @@ var linkMenu = [
   [svgDl,                   "blue",                                        "-HEAD-"], // Downloads
   ["1337x",         "https://1337x.to",""],
   ["RARBG",         "https://rarbg.to/torrents.php",""],
-  ["LibGen",        "https://libgen.pw/",""],
+  ["LibGen",        "https://libgen.me/",""],
   ["B-OK",          "https://b-ok.xyz/",""],
   ["AudioBookBay",  "http://abbaudiobook.com/",""],
   ["Megasearch",    "http://megasearch.co/",""],
