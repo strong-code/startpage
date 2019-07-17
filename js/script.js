@@ -102,6 +102,7 @@ var linkMenu = [
   ["GitHub",                   "https://github.com",""],
   ["Gist",                     "https://gist.github.com/",""],
   ["Imgur",                    "https://imgur.com/upload",""],
+  ["DownDetector",             "https://downdetector.com",""],
   ["10 Minute Mail",           "https://10minutemail.net/",""],
   ["Whats My DNS",             "https://www.whatsmydns.net/",""],
   ["VirusTotal",               "https://www.virustotal.com/#/home/upload",""],
