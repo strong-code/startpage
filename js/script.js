@@ -72,7 +72,7 @@ var linkMenu = [
   ["RARBG",         "https://rarbg.to/torrents.php",""],
   ["LibGen",        "https://libgen.is/",""],
   ["B-OK",          "https://b-ok.xyz/",""],
-  ["AudioBookBay",  "http://abbaudiobook.com/",""],
+  ["AudioBookBay",  "http://audiobookbay.nl/",""],
   ["Megasearch",    "http://megasearch.co/",""],
   ["Zooqle",        "https://zooqle.com/",""],
   ["G.O.D.",        "https://goodolddownloads.com/enter",""],
