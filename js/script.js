@@ -23,10 +23,11 @@ var searchSources = [
   ["im",       "https://www.google.com/search?tbm=isch&q={Q}",           "google_logo Images"],
   ["imdb",     "http://www.imdb.com/find?q={Q}",                         "IMDB"],
   ["ud",       "http://www.urbandictionary.com/define.php?term={Q}",     "Urban Dictionary"],
-  ["wp",       "http://en.wikipedia.org/w/index.php?search={Q}",         "Wikipedia"],
+  ["w",       "http://en.wikipedia.org/w/index.php?search={Q}",          "Wikipedia"],
   ["yt",       "https://www.youtube.com/results?search_query={Q}",       "YouTube"],
   ["ddg",      "https://duckduckgo.com/?q={Q}",                          "DuckDuckGo"],
-  ["gr",       "https://goodreads.com/search?q={Q}",                     "GoodReads"]
+  ["gr",       "https://goodreads.com/search?q={Q}",                     "GoodReads"],
+  ["d",        "https://www.dictionary.com/browse/{Q}",                  "Dictionary"]
 ];
 
 // Sources for background images that dynamically load. Date color is to make it
