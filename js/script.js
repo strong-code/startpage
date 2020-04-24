@@ -102,7 +102,7 @@ var linkMenu = [
   ["Lobste.rs",                "https://lobste.rs/",""],
   ["DigitalOcean",             "https://cloud.digitalocean.com/projects",""],
   ["GitHub",                   "https://github.com",""],
-  ["Gist",                     "https://gist.github.com/",""],
+  ["webmshare",                "https://webmshare.com/",""],
   ["Imgur",                    "https://imgur.com/upload",""],
   ["DownDetector",             "https://downdetector.com",""],
   ["10 Minute Mail",           "https://10minutemail.net/",""],
