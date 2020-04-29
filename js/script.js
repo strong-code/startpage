@@ -113,7 +113,7 @@ var linkMenu = [
   ["CrackWatch",               "https://crackwatch.com/",""],
   ["Steam",                    "https://store.steampowered.com/",""],
   ["Humble Bundle",            "https://www.humblebundle.com/",""],
-  ["Fitgirl",                  "https://fitgirl-repacks.site/",""]
+  ["Fitgirl",                  "https://fitgirl-repacks.site/",""],
   
   [svgMore,                    "yellow",                                      "-HEAD-"], // Other
   ["YouTube",                  "https://www.youtube.com/",""],
