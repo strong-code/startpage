@@ -77,7 +77,7 @@ var linkMenu = [
   ["AudioBookBay",  "http://audiobookbay.nl/",""],
   ["Megasearch",    "http://megasearch.co/",""],
   ["Zooqle",        "https://zooqle.com/",""],
-  ["G.O.D.",        "https://goodolddownloads.com/enter",""],
+  ["Pluto.tv",      "https://pluto.tv/live-tv",""],
 
   [svgReddit,                  "green",                                       "-HEAD-"], // Reddit
   ["/r/buildapcsales",         "https://reddit.com/r/buildapcsales/new",""],
